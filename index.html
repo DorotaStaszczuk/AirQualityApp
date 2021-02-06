@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title></title>
+    </head>
+    <body>
+        <div class="main">
+            <form>
+                <p class="title">Podaj współrzędne geograficzne:</p>
+                <p><label for="szerokosc">Szerokość geograficzna</label></p>
+                <input required type="number" name="szerokosc" id="szerokosc" class="szerokosc" />
+
+                <p><label for="dlugosc">Długość geograficzna</label></p>
+                <input required type="number" name="dlugosc" id="dlugosc" class="dlugosc" />
+
+                <button type="submit" class="form-submit">Wyślij</button>
+            </form>
+
+            <div class="address">
+                <p class="title">Adres najbliższego punktu pomiarowego:</p>
+                <p class="display-address2">Ulica</p>
+                <p class="display-address1">Miasto</p>
+            </div>
+            <div class="air">
+                <p class="title">Jakość powietrza:</p>
+                <p class="pm1">PM1:</p>
+                <p class="pm25">PM2,5:</p>
+                <p class="pm10">PM10:</p>
+                <p class="pressure">Ciśnienie:</p>
+                <p class="humidity">Wilgotność:</p>
+                <p class="temperature">Temperatura:</p>
+            </div>
+            <div class="advice-div">
+                <p class="title">Info:</p>
+                <p class="advice">Czy można dziś wyjść z domu?</p>
+            </div>
+        </div>
+        <script src="config.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
