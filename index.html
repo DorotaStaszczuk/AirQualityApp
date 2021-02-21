@@ -8,7 +8,7 @@
         <title></title>
     </head>
     <body>
-        <div class="main">
+        <main>
             <form>
                 <p class="title">Podaj współrzędne geograficzne:</p>
                 <p><label for="szerokosc">Szerokość geograficzna</label></p>
@@ -20,25 +20,25 @@
                 <button type="submit" class="form-submit">Wyślij</button>
             </form>
 
-            <div class="address">
-                <p class="title">Adres najbliższego punktu pomiarowego:</p>
-                <p class="display-address2 data">Ulica</p>
-                <p class="display-address1 data">Miasto</p>
-            </div>
-            <div class="air">
-                <p class="title">Jakość powietrza:</p>
-                <p class="pm1 data">PM1:</p>
-                <p class="pm25 data">PM2,5:</p>
-                <p class="pm10 data">PM10:</p>
-                <p class="pressure data">Ciśnienie:</p>
-                <p class="humidity data">Wilgotność:</p>
-                <p class="temperature data">Temperatura:</p>
-            </div>
-            <div class="advice-div">
-                <p class="title">Info:</p>
-                <p class="advice">Czy można dziś wyjść z domu?</p>
-            </div>
-        </div>
+            <section>
+                <div class="address">
+                    <p class="display-address data"></p>
+                </div>
+                <div class="weather">
+                    <div class="temperature data"></div>
+                    <div class="humidity data"></div>
+                    <div class="pressure data"></div>
+                </div>
+                <div class="advice-div">
+                    <p class="advice"></p>
+                </div>
+                <div class="air">
+                    <div class="pm1 data"></div>
+                    <div class="pm25 data"></div>
+                    <div class="pm10 data"></div>
+                </div>
+            </section>
+        </main>
         <script src="config.js"></script>
         <script src="main.js"></script>
     </body>
