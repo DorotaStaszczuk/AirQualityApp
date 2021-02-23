@@ -8,7 +8,7 @@ body {
     background-color: #d5d3d6;
 }
 
-.main {
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -18,15 +18,18 @@ body {
 }
 
 form,
-.address,
-.advice-div,
-.air {
+section {
     background-color: #71798e;
     margin: 10px;
     max-width: 400px;
     padding: 30px;
     border-radius: 15px;
     color: #d5d3d6;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -87,4 +90,19 @@ input[type='number'] {
 
 .red {
     color: #d23736;
+}
+
+.data  {
+    color: #505f99;
+}
+
+.air, .weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.advice,
+.display-address {
+    text-align: center;
 }
