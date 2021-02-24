@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const humidity = document.querySelector('.humidity');
     const temperature = document.querySelector('.temperature');
     let advice = document.querySelector('.advice');
+    const responseSection = document.querySelector('.response-section');
 
     formSubmit.addEventListener('click', function(e) {
         e.preventDefault();
-
+        responseSection.classList.contains('none') && responseSection.classList.remove('none');
         let lat = document.querySelector('.szerokosc').value;
         let lang = document.querySelector('.dlugosc').value;
 
@@ -48,13 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 advice.innerText = `${response2.current.indexes[0].description} ${response2.current.indexes[0].advice}`;
                 if (response2.current.indexes[0].level === 'LOW' || response2.current.indexes[0].level === 'VERY_LOW') {
-                    advice.classList.contains('advice') && advice.classList.add('green');
+                    responseSection.classList.add('green');
                 } else if (
                     response2.current.indexes[0].level === 'HIGH' ||
                     response2.current.indexes[0].level === 'VERY_HIGH'
                 ) {
-                    advice.classList.contains('advice') && advice.classList.add('red');
+                    responseSection.classList.add('red');
                 }
+                else { responseSection.classList.add('yellow')}
             });
     });
 });
