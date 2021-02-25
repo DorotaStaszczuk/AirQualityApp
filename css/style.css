@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #d5d3d6;
+    background-color: white;
 }
 
 main {
@@ -59,6 +59,10 @@ p {
     padding: 5px 0;
 }
 
+.response-section p {
+    text-align: center;
+}
+
 input {
     border: 1px solid #bebebe;
     padding: 7px;
@@ -81,15 +85,18 @@ input[type='number'] {
 }
 
 .green {
-    color: #7dbd07;
+    background-color: #7dbd07;
+    box-shadow: 0px 0px 25px 1px rgba(125, 189, 7, 0.9);
 }
 
 .yellow {
-    color: #fafa6e;
+    background-color: #fafa6e;
+    box-shadow: 0px 0px 25px 1px rgba(250, 250, 110, 0.9);
 }
 
 .red {
-    color: #d23736;
+    background-color: #d23736;
+    box-shadow: 0px 0px 25px 1px rgba(210, 55, 54, 0.9);
 }
 
 .data  {
@@ -99,10 +106,25 @@ input[type='number'] {
 .air, .weather {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.air div {
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .advice,
 .display-address {
     text-align: center;
+    padding: 10px 0;
+}
+
+.none {
+    display: none;
 }
