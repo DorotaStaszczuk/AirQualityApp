@@ -13,16 +13,14 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     padding: 30px;
 }
 
 form,
 section {
     background-color: #71798e;
-    margin: 10px;
+    margin: 20px;
     padding: 30px;
     border-radius: 15px;
 }
@@ -30,6 +28,10 @@ section {
 section {
     display: flex;
     flex-direction: column;
+}
+
+form {
+    width: 356px;
 }
 
 button {
@@ -61,7 +63,6 @@ p {
 
 .response-section p {
     text-align: center;
-    color: white;
 }
 
 input {
@@ -101,10 +102,6 @@ input[type='number'] {
     background-color: #d23736;
     -webkit-box-shadow: 0px 0px 26px 7px #d23736;
     box-shadow: 0px 0px 26px 7px #d23736;
-}
-
-.data  {
-    color: #505f99;
 }
 
 .air, .weather {
@@ -152,4 +149,9 @@ input[type='number'] {
 .air .data {
     font-size: 45px;
     font-weight: 900;
+}
+
+.error {
+    color: red;
+    text-align: center;
 }
