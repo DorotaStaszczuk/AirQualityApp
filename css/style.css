@@ -28,6 +28,7 @@ section {
 section {
     display: flex;
     flex-direction: column;
+    width: 650px;
 }
 
 form {
@@ -93,9 +94,9 @@ input[type='number'] {
 }
 
 .yellow {
-    background-color: #fafa6e;
-    -webkit-box-shadow: 0px 0px 26px 7px #fafa6e;
-    box-shadow: 0px 0px 26px 7px #fafa6e;
+    background-color: #F5A102;
+    -webkit-box-shadow: 0px 0px 26px 7px #F5A102;
+    box-shadow: 0px 0px 26px 7px #F5A102;
 }
 
 .red {
