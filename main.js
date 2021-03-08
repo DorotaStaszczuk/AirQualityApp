@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let advice = document.querySelector('.advice');
     const responseSection = document.querySelector('.response-section');
     const errorMessage = document.querySelector('.error');
+    let date = new Date();
+    document.querySelector('.datetime').innerHTML = date.toLocaleString();
 
     formSubmit.addEventListener('click', function(e) {
         e.preventDefault();
